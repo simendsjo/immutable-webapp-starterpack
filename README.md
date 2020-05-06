@@ -106,10 +106,12 @@ Test ut endringer i `App.jsx` og deploy ny versjon av assets og index for å sje
 
 <details><summary>Tips</summary>
 <p>
+
 - du trenger en `origin` pr. s3 bucket
 - `enabled`, `restrictions`, `viewer_certificate` kan være default
 - `default_root_object` er `index.html`
 - `default_cache_behavior` og `ordered_cache_behavior` kan ha like configparameter, men default må peke på host-bucket og ordered_cache_behavior på assets. Path `assets/*` matcher url-strukturen fra index.html
+
 </p>
 </details>
 
