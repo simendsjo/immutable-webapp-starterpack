@@ -49,6 +49,9 @@ Bygg assets lokalt med `npm run build` og bruk aws-cliet til å laste opp alt in
 
 `aws s3 cp <LocalPath> <S3Uri>`
 
+aws s3 cp build/main.js s3://ramslok-immutable-webapp-assets/1/
+Dette kopierer over til bucket_regional_domain_name som finnes i tfstate
+
 Se [AWS-cli-docs](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) for `aws s3 cp`
 
 <details><summary>Tips</summary>
