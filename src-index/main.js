@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+const sha = "${{process.env.GITHUB_SHA}}";
 const environment =  "test";
 const url = 'https://ramslok-immutable-webapp-assets.s3.eu-north-1.amazonaws.com' ;
 const date = new Date().toISOString();
@@ -18,7 +19,7 @@ const index = `<!doctype html>
        <script>
        env = {
            ENV_NAME: '${environment}',
-           GIT_SHA: '${process.env.GITHUB_SHA}',
+           GIT_SHA: '${sha}',
            API_URL: '${url}',
            CREATED_AT: '${date}'
        }
