@@ -40,7 +40,7 @@ jobs:
         aws-region: eu-north-1
     - name: Upload to AWS s3
       run: >-
-        aws s3 cp --recursive --cache-control public,max-age=31536000,immutable build-${{github.sha}}/* s3://ramslok-immutable-webapp-assets/assets/${{github.sha}}/
+        aws s3 cp --recursive --cache-control public,max-age=31536000,immutable build-${{github.sha}} s3://ramslok-immutable-webapp-assets/assets/${{github.sha}}
 
   upload-index:
     needs: upload-assets
