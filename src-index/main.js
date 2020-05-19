@@ -15,7 +15,7 @@ const index = `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-       <!-- env vars -->
+       <!--  env vars -->
        <script>
        env = {
            ENV_NAME: '${environment}',
