@@ -65,4 +65,4 @@ jobs:
         aws-region: eu-north-1
     - name: Upload to AWS s3
       run: >-
-        aws s3 cp --cache-control no-store index.html s3://ramslok-immutable-webapp-assets
+        aws s3 cp --cache-control no-store index.html s3://ramslok-immutable-webapp-test
